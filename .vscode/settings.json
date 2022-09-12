@@ -1,5 +1,8 @@
 {
     "editor.tabSize": 4,
 	"editor.insertSpaces": true,
-	"editor.detectIndentation": false
+    "editor.detectIndentation": false,
+    "python.linting.mypyEnabled": false,
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
 }
