@@ -6,7 +6,7 @@ Test your add_integer function
 Description
 =====
 
-```add_integer(a, b)``` returns the addition of its two arguments. For numbers,
+``add_integer(...)`` returns the addition of its two arguments. For numbers,
 that value is equivalent to using the ``+`` operator.
 
 =====
