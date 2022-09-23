@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""Find the max integer in a list
-"""
+"""Find the max integer in a list"""
 
 
 def max_integer(list=[]):
     """Find and return the max int"""
+
     if len(list) == 0:
         return None
     res = list[0]
