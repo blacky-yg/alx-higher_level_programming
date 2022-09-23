@@ -20,6 +20,9 @@ def matrix_divided(matrix, div):
     """
     if not isinstance(div, (int, float)):
         raise TypeError('div must be a number')
+    if div == 0:
+        raise ZeroDivisionError(
+            "Each row of the matrix must have the same size")
     matrix_divided = [x[:] for x in matrix]
     for line in matrix_divided:
         if len(line) != len(matrix_divided[0]):
