@@ -15,6 +15,7 @@ class Square(Rectangle):
             size (int): Size of the square
         """
         super().__init__(size, size)
+        self.__size = size
 
     def __str__(self):
         """String representation of the Square
