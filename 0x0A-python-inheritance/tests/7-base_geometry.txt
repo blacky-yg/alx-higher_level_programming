@@ -1,0 +1,106 @@
+===========================
+Test your BaseGeometry class
+===========================
+
+=====
+Description
+=====
+
+``BaseGeometry`` is class and she has several functions (area, integer_validator)
+
+=====
+Usage
+=====
+
+First, you need to import the ``BaseGeometry`` from the module
+
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Now, you can use it like following:
+
+    >>> fig = BaseGeometry()
+    >>> fig.area()
+    Traceback (most recent call last):
+    	      ...
+    Exception: area() is not implemented
+
+    >>> fig = BaseGeometry()
+    >>> fig.integer_validator("name", "5")
+    Traceback (most recent call last):
+    	      ...
+    TypeError: name must be an integer
+
+    >>> fig = BaseGeometry()
+    >>> fig.integer_validator("name", -10)
+    Traceback (most recent call last):
+    	      ...
+    ValueError: name must be greater than 0
+
+    >>> fig = BaseGeometry()
+    >>> fig.integer_validator("name", 0)
+    Traceback (most recent call last):
+    	      ...
+    ValueError: name must be greater than 0
+
+    >>> fig = BaseGeometry()
+    >>> fig.integer_validator("name", True)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: name must be an integer
+
+    >>> fig = BaseGeometry()
+    >>> fig.integer_validator("name", 40)
+
+    >>> fig = BaseGeometry()
+    >>> fig.integer_validator("name")
+    Traceback (most recent call last):
+    	      ...
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+    >>> fig = BaseGeometry()
+    >>> fig.integer_validator()
+    Traceback (most recent call last):
+        ...
+    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+    >>> fig = BaseGeometry()
+    >>> fig.integer_validator("name", 1, 2)
+    Traceback (most recent call last):
+        ...
+    TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+    >>> fig = BaseGeometry()
+    >>> fig.area(5)
+    Traceback (most recent call last):
+        ...
+    TypeError: area() takes 1 positional argument but 2 were given
+
+    >>> fig = BaseGeometry()
+    >>> fig.area(5, 5)
+    Traceback (most recent call last):
+        ...
+    TypeError: area() takes 1 positional argument but 3 were given
+
+    >>> fig = BaseGeometry()
+    >>> fig.integer_validator("age", [3])
+    Traceback (most recent call last):
+        ...
+    TypeError: age must be an integer
+
+    >>> fig = BaseGeometry()
+    >>> fig.integer_validator("age", (4,))
+    Traceback (most recent call last):
+        ...
+    TypeError: age must be an integer
+
+    >>> fig = BaseGeometry()
+    >>> fig.integer_validator("age", {5, 0})
+    Traceback (most recent call last):
+        ...
+    TypeError: age must be an integer
+
+    >>> fig = BaseGeometry()
+    >>> fig.integer_validator("age", None)
+    Traceback (most recent call last):
+        ...
+    TypeError: age must be an integer

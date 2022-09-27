@@ -12,7 +12,7 @@ Description
 Usage
 =====
 
-First, you need to import the ``1-my_list`` from the module
+First, you need to import the ``MyList`` from the module
 
     >>> MyList = __import__("1-my_list").MyList
 
