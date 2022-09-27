@@ -2,7 +2,7 @@
 """Check if an object is an instance of a specific class that inherited"""
 
 
-def is_kind_of_class(obj, a_class) -> bool:
+def inherits_from(obj, a_class) -> bool:
     """Implementation of object is instance of a class that inherited
 
     Args:

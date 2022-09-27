@@ -5,6 +5,10 @@
 class MyList(list):
     """Custom List"""
 
+    def __init__(self):
+        """Initializes a list"""
+        super().__init__()
+
     def print_sorted(self):
         """Prints the ascending sorted list"""
         print(sorted(self))
