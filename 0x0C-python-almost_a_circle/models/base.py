@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Implementation of a Base class"""
 
+
 class Base:
     """Representation of a Base Class"""
     __nb_objects = 0
