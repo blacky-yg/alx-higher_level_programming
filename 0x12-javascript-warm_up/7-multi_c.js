@@ -1,11 +1,12 @@
 #!/usr/bin/node
+// Print "C is fun" x times
 
-const sentence = 'C is fun';
+const size = Math.floor(Number(process.argv[1]));
 
-if (process.argv[1] === undefined) {
+if (isNaN(size)) {
   console.log('Missing number of occurrences');
 } else {
   for (let i = 0; i < parseInt(process.argv[1]); i++) {
-    console.log(sentence);
+    console.log('C is fun');
   }
 }

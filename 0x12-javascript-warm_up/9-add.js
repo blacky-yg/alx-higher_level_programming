@@ -1,7 +1,8 @@
 #!/usr/bin/node
+// Add two numbers
 
-if (process.argv[1] === undefined || process.argv[2] === undefined) {
-  console.log('NaN');
-} else {
-  console.log(parseInt(process.argv[2]) + parseInt(process.argv[3]));
+function add (a, b) {
+  return a + b;
 }
+
+console.log(add(Number(process.argv[2]), Number(process.argv[3])));

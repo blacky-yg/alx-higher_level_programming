@@ -1,7 +1,6 @@
 #!/usr/bin/node
+// Print 3 lines using an array of string and a loop
 
-const args = ['C is fun', 'Python is cool', 'Javascript is amazing'];
-
-for (let i = 0; i < args.length; i++) {
-  console.log(args[i]);
+for (const element of ['C is fun', 'Python is cool', 'Javascript is amazing']) {
+  console.log(element);
 }
