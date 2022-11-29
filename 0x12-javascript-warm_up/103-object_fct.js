@@ -1,5 +1,7 @@
 #!/usr/bin/node
-let myObject = {
+// Function that increments and calls a function.
+
+const myObject = {
   type: 'object',
   value: 12
 };
