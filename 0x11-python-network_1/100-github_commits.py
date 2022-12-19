@@ -11,7 +11,8 @@ if __name__ == "__main__":
     response = res.json()
     try:
         for i in range(10):
-            print(f"{response[i]['sha']}: \
-              {response[i]['commit']['author']['name']}")
+            sha = response[i]['sha']
+            author = response[i]['commit']['author']['name']
+            print(f"{sha}: {author}")
     except IndexError:
         pass
