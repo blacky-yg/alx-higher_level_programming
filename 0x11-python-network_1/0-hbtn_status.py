@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """Python script that fetches https://intranet.hbtn.io/status"""
 
-from urllib import request
+import urllib.request
 
 if __name__ == "__main__":
-    with request.urlopen('https://intranet.hbtn.io/status') as response:
+    with urllib.request.urlopen('https://intranet.hbtn.io/status') as response:
         res = response.read()
         print("Body response:")
         print("\t- type: {}".format(type(res)))
