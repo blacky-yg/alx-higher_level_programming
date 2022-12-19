@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Python script that takes in a URL, sends a request to the URL and displays the body of the response."""
+"""Error code #0"""
 
 import sys
 import urllib.request
